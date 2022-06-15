@@ -30,8 +30,8 @@ jobs:
         pip install requests
     - name: Read config from secrets  #读取机密
       env: 
-        CONFIG_ID: ${{ secrets.CONFIG_ID1 }} # secrets_id 提供
-        CONFIG_KEY: ${{ secrets.CONFIG_KEY1 }} # secrets_key 提供
+        CONFIG_ID: ${{ secrets.CONFIG_ID }} # secrets_id 提供
+        CONFIG_KEY: ${{ secrets.CONFIG_KEY }} # secrets_key 提供
       run: | 
         cp 1.py 2.py
         echo $CONFIG_ID > configid.txt
